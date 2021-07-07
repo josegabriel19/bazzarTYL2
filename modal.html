@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="..//bootstrap-5.0.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Clientes</h1>
+        <table class="table table-over table-responsive">
+            <thead class="table-dark">
+                <tr>
+                    <th> Id persona </th>
+                    <th>Nombre</th>
+                    <th>APaterno</th>
+                    <th>AMaterno</th>
+                    <th>Sexo</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jose</td>
+                <td>Cardenas</td>
+                <td>Vazquez</td>
+                <td>Masculino</td>
+                <td>19</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Adrian</td>
+                    <td>Rodriguez</td>
+                    <td>Zamarron</td>
+                    <td>Masculino</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Leslie</td>
+                    <td>Acosta</td>
+                    <td>Dominguez</td>
+                    <td>Femenino</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Miguel</td>
+                    <td>Chacon</td>
+                    <td>Lopez</td>
+                    <td>Masculino</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" class="btn btn-success btn-lg"  data-bs-toggle="modal" data-bs-target="#myModal">Nuevo Cliente</button>
+        <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Editar Cliente</button>
+        <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Eliminar Cliente</button>
+
+        <div class="modal" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Registrar Cliente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p></p>
+                </div>
+                <form >
+                    <div class="form-group">
+                        <label class="form-label" for="nombre">  Nombre</label>
+                        <input class="form-control" type="text" name="nombre" placeholder=" Escribe tu nombre">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label class="form-label" for="APaterno">  APaterno</label>
+                        <input class="form-control" type="text" name="apellido" placeholder=" Escribe tu AP paterno">
+                    </div >
+                    <br>
+                 
+                    <div class="form-group">
+                        <label class="form-label" for="AMaterno"> AMaterno</label>
+                        <input class="form-control" type="text" name="apellido" placeholder=" Escribe tu AP materno">
+                    </div>
+                    <br>
+                    <div>
+                        <label class="form-label" for="Sexo">Sexo</label>
+                        <select class="form-select" aria-label="Default select example" name="Sexo" >
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="form-label" for="edad">  Edad</label>
+                        <input class="form-control" type="text" name="Edad" placeholder=" Escribe tu Edad">
+                    </div>
+
+
+                </form>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="../bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

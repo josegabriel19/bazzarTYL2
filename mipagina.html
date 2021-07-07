@@ -1,0 +1,434 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+       img{
+           
+           width: 50;
+           right: 150px;
+       }
+       #categorias{
+           width: 320;
+           margin-top: 30px;
+       }
+       #buscar{
+           margin-right: 600px;
+           margin-top: 20px;
+       }
+       #buscar1{
+           margin-right: 600px;
+           margin-top: 20px;
+           width: 500px;
+       }
+       #login{
+           margin-top: 15px;
+           margin-left: -355px;
+           width: 180px;
+           right: -20px;
+       }
+       #login1{
+           margin-top: 15px;
+           margin-left: -170px;
+           width: 165px;
+           right: -30px;
+       }
+       #imagenlogin{
+        width: 170px;
+        right: 170px;
+        margin-left: 150px;
+      }
+      #iconolog{
+        margin-top: -5px;  
+      }
+      #home-tab{
+        width: 320px;
+
+      }
+      #profile-tab{
+        width: 320px;
+
+      }
+      #contact-tab{
+        width: 320px;
+
+      }
+      #carousel1{
+        margin-top: 10px ;
+      }
+    #carouselimage{
+      
+      height: 400px;
+
+      }
+
+    </style>
+    <title>BazzarTYL</title>
+    <link rel="stylesheet" href="..//bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <div class="p-3 mb-2 bg-success text-dark">
+</head>
+
+<body>
+
+ 
+<!-- AQUI COMIEZA LA BARRA DE NAVEGACION-->
+  <div id="todo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="..//img/logo25.png" alt=""> Bazzar TYL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" id="iconolog" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg>
+                  </svg>  Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <svg xmlns="http://www.w3.org/2000/svg" id="iconolog" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg> Productos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>Electronica</a></li>
+                  <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>Herramientas</a></li>
+                  <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>Joyeria</a></li>
+                  <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>Hogar</a></li>
+                  <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>Ofertas</a></li>
+                </ul>
+              </li>
+
+
+              <!--APARTADO DE AYUDA-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"> <svg xmlns="http://www.w3.org/2000/svg" id="iconolog" width="16" height="16" fill="currentColor" class="bi bi-question-square" viewBox="0 0 16 16">
+                  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                </svg>Ayuda</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Comprar</a> </li>
+                  <li><a class="dropdown-item" href="#">Empeño</a></li>
+                  <li><a class="dropdown-item" href="#">Poltica de Empeño</a></li>
+                  <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Sobre Nosotros</a>
+              </li>
+            </ul>
+            <ul>
+              
+            </ul>
+            <form class="d-flex">
+                    <input class="form-control me-2" id="buscar1" type="search" placeholder="Buscar por producto, categoria...." aria-label="Search">
+              <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
+            </form>
+
+            <form>
+                <button type="button" class="btn btn-success btn-lg"  id="login1" data-bs-toggle="modal" data-bs-target="#myModal2"><svg xmlns="http://www.w3.org/2000/svg" id="iconolog" width="25" height="25" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+                    <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                  </svg> Registrarse</button>
+                <button type="button" class="btn btn-success btn-lg"  id="login" data-bs-toggle="modal" data-bs-target="#myModal"><svg xmlns="http://www.w3.org/2000/svg" id="iconolog" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg>  Iniciar sesion</button>
+            </form>
+            <!-- MODAL DE INICIAR SESION-->
+            <div class="modal" id="myModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Iniciar Sesion</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p><img src="..//img/login2.png" alt="" id="imagenlogin"></p>
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label" aria-placeholder="Ingresa tu Usuario">Usuario</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label" aria-placeholder="Ingresa tu Contraseña">Contraseña</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Mantener sesion iniciada</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-left: 175px;">Iniciar Sesion</button>
+                      </form>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Registrarse</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p></p>
+                </div>
+                <form >
+                    <div class="form-group">
+                        <label class="form-label" for="nombre">  Nombre</label>
+                        <input class="form-control" type="text" name="nombre" placeholder=" Escribe tu nombre">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label class="form-label" for="APaterno">  Apellido Paterno</label>
+                        <input class="form-control" type="text" name="apellido" placeholder=" Escribe tu AP paterno">
+                    </div >
+                    <br>
+                 
+                    <div class="form-group">
+                        <label class="form-label" for="AMaterno"> Apellido Materno</label>
+                        <input class="form-control" type="text" name="apellido" placeholder=" Escribe tu AP materno">
+                    </div>
+                    <br>
+                    <div>
+                        <label class="form-label" for="Sexo">Sexo</label>
+                        <select class="form-select" aria-label="Default select example" name="Sexo" >
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="form-label" for="edad">  Edad</label>
+                        <input class="form-control" type="text" name="Edad" placeholder=" Escribe tu Edad">
+                    </div><br>
+                    <div>
+                        <label class="form-label" for="Telefono">  Telefono</label>
+                        <input class="form-control" type="text" name="telefono" placeholder=" Escribe tu numero de telefono a 10 digitos">
+                    </div> <br>
+                    <div>
+                        <label class="form-label" for="direccion">  Direccion</label>
+                        <input class="form-control" type="text" name="Direccion" placeholder=" Escribe tu Direccion">
+                    </div>
+
+
+                </form>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+      </nav>
+
+      <!-- CAROUSEL IMAGENES-->
+      <div class="container">
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..//img/ofertas.png" class="d-block w-100" id="carouselimage" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..//img/herramientas.jpg" class="d-block w-100" id="carouselimage" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..//img/hotsale.jpg" class="d-block w-100" id="carouselimage" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+       <!-- BARRAS DE CATEGORIAS-->
+       <div class="container" id="A123">
+        <br><br><br>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+                <div  class="container first">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="card" style="width: 18rem;">
+  
+                </div>
+                      <img src="..//img/television.jpg" class="card-img-top" alt="imagen de television"><br><br>
+                      <h2>SMART TV SAMSUNG</h2>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, rem iure fuga eum provident incidunt esse tenetur quaerat, harum repellendus dolorum natus facilis 
+                      <a href="#" class="btn btn-warning btn-lg" id="#myModal1" data-bs-toggle="modal" data-bs-target="#myModal5">Comprar</a>
+                  
+                    </div>
+                    
+                  
+                    <div class="col-4">
+                      <img src="..//img/PCNuevo.jpg" class="card-img-top" alt="imagen de computadora"><br><br><br>
+                      <h2>COMPUTADORA SAMSUNG</h2>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum rem unde porro explicabo adipisci impedit fuga velit fugit non quis. Architecto fuga nihil aut, rerum <br>
+                      <a href="#" class="btn btn-warning btn-lg" id="#myModal" data-bs-toggle="modal" data-bs-target="#myModal6">Comprar</a>
+                    </div>
+                  
+                    <div class="col-4">
+                      <img src="..//img/xbox.jpg" class="card-img-top" alt="imagen de xbox"> <br>
+                      <h2 >XBOX ONE 1TB</h2>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis non voluptates eos natus ex. Minima deserunt quod nam reiciendis? Culpa fuga doloribus dicta earum 
+                      <a href="#" class="btn btn-warning btn-lg" id="#myModa1" data-bs-toggle="modal" data-bs-target="#myModal7">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+  
+              <!-- MODAL DE CONFIRMACION DE COMPRA DE PRODUCTOS-->
+              <!-- MODAL DE SMART TV-->
+              <div class="modal" id="myModal5"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title"> SMART TV SAMSUNG</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p><img src="..//img/television.jpg" alt="" id="imagenlogin"></p>
+                      <form>
+                        <div class="mb-3">
+                          <h4>Descripcion</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor beatae officiis vero voluptas, modi quas fugiat doloribus consectetur commodi repudiandae! Tempore reiciendis modi assumenda vero deserunt dolorem repellat dolor.</p>
+                          
+                        </div>
+                        <div class="mb-3">
+                         <h6> descuento del producto: 15%</h6>
+                        </div>
+  
+                        <div class="mb-3">
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Confirmar forma de pago</option>
+                            <option value="1">Efectivo</option>
+                            <option value="2">Tarjeta</option>
+                            
+                          </select>
+                         </div><br><br>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                      </form>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- MODAL DE COMPUTADORA-->
+        <div class="modal" id="myModal6"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title"> COMPUTADORA SAMSUNG</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p><img src="..//img/PCNuevo.jpg" alt="" id="imagenlogin"></p>
+                <form>
+                  <div class="mb-3">
+                    <h4>Descripcion</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor beatae officiis vero voluptas, modi quas fugiat doloribus consectetur commodi repudiandae! Tempore reiciendis modi assumenda vero deserunt dolorem repellat dolor.</p>
+                    
+                  </div>
+                  <div class="mb-3">
+                   <h6> descuento del producto: 15%</h6>
+                  </div>
+  
+                  <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Confirmar forma de pago</option>
+                      <option value="1">Efectivo</option>
+                      <option value="2">Tarjeta</option>
+                      
+                    </select>
+                   </div><br><br>
+                  <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                </form>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- MODAL DE XBOX-->
+  <div class="modal" id="myModal7"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> XBOX ONE 1TB</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><img src="..//img/xbox.jpg" alt="" id="imagenlogin"></p>
+          <form>
+            <div class="mb-3">
+              <h4>Descripcion</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor beatae officiis vero voluptas, modi quas fugiat doloribus consectetur commodi repudiandae! Tempore reiciendis modi assumenda vero deserunt dolorem repellat dolor.</p>
+              
+            </div>
+            <div class="mb-3">
+             <h6> descuento del producto: 10%</h6>
+            </div>
+  
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Confirmar forma de pago</option>
+                <option value="1">Efectivo</option>
+                <option value="2">Tarjeta</option>
+                
+              </select>
+             </div> <br><br>
+            <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+          </form>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    
+    
+  </div>
+      <script src="..//bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+</div>

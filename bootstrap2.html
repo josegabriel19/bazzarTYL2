@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button{
+        
+        width: 300px;
+        margin-top: -50px;
+      }
+      li{
+        margin-top: 20px;
+      }
+      #bloc{
+        margin-top: 0px;
+        width: 400;
+      }
+      img{
+        margin-left: 450px;
+      }
+      #lista{
+          margin-top: 0px;
+          width: 350px;
+          margin-left: 450px;
+      }
+      #Mensajes{
+          margin-top: -20px;
+      }
+      #configuracion{
+        margin-top: px;
+      }
+      #login{
+        width: 170px;
+        right: 170px;
+        margin-left: 150px;
+      }
+
+    </style>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="..//bootstrap-5.0.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#Inicio" type="button" role="tab" aria-controls="Inicio" aria-selected="true">Inicio</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#Mensajes" type="button" role="tab" aria-controls="Mensajes" aria-selected="false">Mensajes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Configuracion" type="button" role="tab" aria-controls="Configuracion" aria-selected="false">Configuracion</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal" role="tab" aria-controls="perfil" aria-selected="false">Perfil</button>
+              </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="Inicio" role="tabpanel" aria-labelledby="Inicio-tab">
+                <p> <br><br><br>
+                    Bootstrap es modular y consiste esencialmente en una serie de hojas de estilo LESS que implementan la variedad de componentes de la herramienta. Una hoja de estilo llamada bootstrap.less incluye los componentes de las hojas de estilo. Los desarrolladores pueden adaptar el mismo archivo de Bootstrap, seleccionando los componentes que deseen usar en su proyecto.
+    
+                    Los ajustes son posibles en una medida limitada a través de una hoja de estilo de configuración central. Los cambios más profundos son posibles mediante las declaraciones LESS.
+    
+                    El uso del lenguaje de hojas de estilo LESS permite el uso de variables, funciones y operadores, selectores anidados, así como clases mixin.
+    
+                    Desde la versión 2.0, la configuración de Bootstrap también tiene una opción especial de "Personalizar" en la documentación. Por otra parte, los desarrolladores eligen en un formulario los componentes y ajustes deseados, y de ser necesario, los valores de varias opciones a sus necesidades. El paquete consecuentemente generado ya incluye la hoja de estilo CSS pre-compilada. 
+                </p>
+                <img src="..//img/bootstrap.png" alt="">
+            </div>
+            <div class="tab-pane fade" id="Mensajes" role="tabpanel" aria-labelledby="Mensajes-tab">
+                <br><br><br>
+                <ul class="list-group">
+
+                    <li class="list-group-item" id="lista">Cras justo odio</li>
+                    <li class="list-group-item" id="lista">Dapibus ac facilis</li>
+                    <li class="list-group-item" id="lista">Morbi leo risus</li>
+                    <li class="list-group-item" id="lista">Porta ac consecteur</li>
+                    <li class="list-group-item" id="lista">Vestubulum at eros</li>
+                    <li class="list-group-item" id="lista">Cras justo odio</li>
+                    <li class="list-group-item" id="lista">Dapibus ac facilis</li>
+                    <li class="list-group-item" id="lista">Morbi leo risus</li>
+                    <li class="list-group-item" id="lista">Porta ac consecteur</li>
+                    <li class="list-group-item" id="lista">Vestubulum at eros</li>
+                  </ul>
+            </div>
+            <div class="tab-pane fade" id="Configuracion" role="tabpanel" aria-labelledby="Configuracion-tab">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          starwars
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Star Wars, conocida también en español como La guerra de las galaxias, ​​​ es una franquicia compuesta primordialmente de una serie de películas concebidas por el cineasta estadounidense George Lucas en la década de 1970, y producidas y distribuidas por The Walt Disney Company a partir de 2012.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            
+              <div class="modal" id="myModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Iniciar Sesion</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p><img src="..//img/login2.png" alt="" id="login"></p>
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label" aria-placeholder="Ingresa tu Usuario">Usuario</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label" aria-placeholder="Ingresa tu Contraseña">Contraseña</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Mantener sesion</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                      </form>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+    <script src="..//bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
